@@ -1,0 +1,581 @@
+/*
+green color = #2abc69
+over = #1e844a
+grey box = #fafafa
+*/
+
+/* ------------------------------------------------------------------------*/
+/* Setting global definition / BASIC SETUP */ 
+/* ------------------------------------------------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background-color: #fff;/* define de font color of webpage*/
+    color: #555; /* define the color text */
+    font-family: 'Lato','Arial','sans-serif';/* define the font it will be used on site*/
+    font-weight: 300;/* anchura da fonte */
+    font-size: 20px;/* size of font */
+    text-rendering: optimizeLegibility;/* para que siempre renderize bonitinho as letras */
+    padding-top: 40px;
+}
+
+strong {
+    color: #fff !important;
+    word-spacing: 2px;/*espacio entre palabras*/
+    letter-spacing: 1px;/*espacio entre letras*/
+    font-weight: 300;/*deixa a letra mais fina*/
+}
+
+.container-bmplease {
+    width: 80%;
+}
+
+.clearfix {
+    zoom: 1
+}
+
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+/* ------------------------------------------------------------------------*/
+/* REUSABLEBLE COMPONENTS */ 
+/* ------------------------------------------------------------------------*/
+
+/* -------- Panel Back Ground Color ------------ */
+.panel-heading-bp {
+    background-color: #2abc69 !important;
+}
+
+p {
+    text-align: justify;
+}
+
+/* ------ HEADER ------ */
+h1,
+h2,
+h3 {
+    font-weight: 300;/*deixa a letra mais fina*/
+    text-transform: uppercase;/*deja todo en maiuscula*/
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 240%;/*é um 200% mais grande do font-size definido no selector html*/
+    word-spacing: 4px;/*espacio entre palabras*/
+    letter-spacing: 1px;/*espacio entre letras*/
+}
+
+h2 {
+    font-size: 140%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 15px;
+    letter-spacing: 1px;/*espacio entre letras*/
+}
+
+h3 {
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+
+/* ----- BUTTON----------*/
+.btn-bemplease:link,/* quando o elemento <a> esta en seu estado normal = link */
+.btn-bemplease:visited/* quando o elemento <a> esta en seu estado visitado = visited */ {
+    background-color: #2abc69;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    word-spacing: 2px;/*espacio entre palabras*/
+    letter-spacing: 1px;/*espacio entre letras*/
+    font-weight: 300;/*deixa a letra mais fina*/   
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 200px;
+    -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-bemplease:hover,/* quando o mouse esta ensima ou se faz click sobre ele se mostrara o seguinte */
+.btn-bemplease:active {
+    background-color: #1e844a;
+}
+
+/* ------LINKS ------ */
+a:link,
+a:visited {
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover,
+a:active {
+    border-bottom: 1px solid #1e844a;
+    cursor: pointer;
+}
+
+.panel-heading-bp a:link,
+.panel-heading-bp a:visited {
+    color: #fff !important;
+}
+
+/* ----- SOCIAL ICON ---- */
+.icon-social i {
+    color: #2abc69;
+    padding: 0 5px;
+}
+
+.icon-social a:hover, 
+.icon-social a:active {
+    cursor: pointer;
+    border-bottom: 1px solid #1e844a;
+}
+
+/* ------- PRE-VIEW IMG TO UPLOAD ------------ */
+.preViewimgToUpload {
+    max-height: 75px;
+    max-width: 75px;
+}
+
+
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
+}
+
+/* ------------- comentarios --------------------*/
+.comentarios p {
+    font-size: 80%;
+}
+
+.comentarios li {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.comentarios li:last-of-type {
+    border-bottom: none;
+}
+
+/* ------------------------------------------------------------------------*/
+/* LOGIN */ 
+/* ------------------------------------------------------------------------*/
+
+.title-login {
+    margin-bottom: 35px;
+}
+
+.loginContainer {
+    border-radius: 15px;
+    background-color: rgba(253, 253, 253, 0.98);
+    box-shadow: 0 2px 2px #efefef;
+    margin-bottom: 35px;
+}
+
+.loginContainer h3{
+    text-align: center;
+}
+
+.loginContainer a:link,
+.loginContainer a:visited {
+    text-decoration: underline;
+    color: #a94442;
+}
+
+a:hover,
+a:active {
+    border-bottom: none;
+    cursor: pointer;
+}
+
+.navbarEsqueciLogin li {
+    list-style: none;
+}
+
+.navbarEsqueciLogin li:last-of-type {
+    margin-top: -10px;
+}
+
+.navbarEsqueciLogin li:hover,
+.navbarEsqueciLogin li:active {
+    background-color: transparent !important;
+}
+
+.navbarEsqueciLogin a:link,
+.navbarEsqueciLogin a:visited {
+    text-decoration: none;
+    color: #fff ;
+    font-size: 70%;
+}
+
+.navbarEsqueciLogin a:hover,
+.navbarEsqueciLogin a:active {
+    border-bottom: 1px solid #1e844a !important;
+    cursor: pointer;
+}
+
+
+.loginContainer button[type=submit] {
+    margin-bottom: 20px;
+}
+
+/* ------------------------------------------------------------------------*/
+/* HEADER */ 
+/* ------------------------------------------------------------------------*/
+.nav-bemplease {
+    background-color: #2abc69;
+}
+
+.logo {
+    padding-top: 8px;
+}
+
+.nav-bemplease li:hover {
+    background-color: #1e844a;
+    cursor: pointer; 
+}
+
+.nav-bemplease li:hover,
+.nav-bemplease a:hover,
+.nav-bemplease li:active,
+.nav-bemplease a:active{
+    border: 0;
+}
+
+.icon-nav {
+    color: #fff;
+    font-size: 150%;
+}
+
+.navbar-paragraph {
+    margin-top: 0;
+    vertical-align: middle;
+}
+
+
+
+/* ------------------------------------------------------------------------*/
+/* CONTEUDO MASTER */ 
+/* ------------------------------------------------------------------------*/
+.sponsor img {
+    padding: 1% 0;
+    margin-bottom: 10px;
+    height: 120px;
+    width: 100%;/* re-ver issto porque fica melhor com auto mas da problema no responsive */
+}
+
+.carousel-inner {
+    overflow: hidden;
+    background-color: #666;
+}
+
+.carousel-photo {
+    opacity: 0.5;
+    margin: auto;
+    height: 250px;
+    width: 100%;
+}
+
+.carousel-photo img,
+.carousel-photo img {
+    width: 100%;
+    margin: auto;
+    height: 250px;
+}
+
+.carousel-caption a:link,
+.carousel-caption a:visited {
+    text-decoration: none;
+    color: #fff ;
+    font-size: 110%;
+}
+
+.carousel-caption a:hover,
+.carousel-caption a:active {
+    border-bottom: 1px solid #1e844a !important;
+    cursor: pointer;
+}
+
+.vermas {
+    color: #2abc69 !important;
+    font-size: 70% !important;
+}
+
+
+.carousel-inner .item .icon-social {
+    float: right;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    z-index: 1000;
+    background-color: #2abc69;
+}
+
+
+.carousel-inner .item .icon-social i {
+    color: #fff !important;
+}
+
+
+
+
+/* ------------------------------------------------------------------------*/
+/* INFO PERFIL */ 
+/* ------------------------------------------------------------------------*/
+
+.section-perfil .profile-image{
+    padding: 0 0;
+}
+
+.panel-heading-bp {
+    width: 100%;
+}
+
+
+
+
+
+
+/* ------------------------------------------------------------------------*/
+/* NOTICIAS BY TIPO */ 
+/* ------------------------------------------------------------------------*/
+.nav-tabs{
+    background-color: #2abc69;
+    position: relative;
+}
+
+.noticias-by-tag .nav > li > a {
+    position: relative;
+    display: block;
+}
+
+
+.nav-tabs>li.active>a,
+.nav-tabs>li.active>a:focus, 
+.nav-tabs>li.active>a:hover {
+    border: 0 !important;
+}
+
+.hidden-nav-tabs {
+    max-height: 47px;
+    overflow: hidden;
+}
+
+.show-nav-tabs {
+    background-color: #2abc69;
+    overflow: visible;
+}
+
+.nav-tabs li:hover,
+.nav-tabs li:active {
+    cursor: pointer;
+}
+
+.nav-tabs li:last-child {
+    position: absolute;
+    overflow: visible;
+    right: 4px;
+    top: 13px;
+    color: #fff;
+}
+
+.nav-tabs > li > a{
+    border: medium none;
+    color:#fff;
+}
+.nav-tabs > li > a:hover{
+    background-color: #1e844a !important;
+    border: medium none;
+    border-radius: 0;
+}
+
+.lst-publicacoes {
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 2px 2px #efefef;
+    padding-top: 10px;
+    margin: 10px 0;
+} 
+
+.lst-publicacoes .media-body p {
+    font-size: 80%;
+}
+
+.noticia img {
+    height: auto;
+    max-width: 250px;
+    border-radius: 15px;
+    padding: 1% 1%;  
+}
+
+.media-bp {
+    margin: 5px 0;
+}
+
+.lst-publicacoes .media-body-bp {
+    padding-right: 10px;
+}
+
+.footer-conteudo {
+    display: block;
+    float: left;
+    width: 100%;
+    border-top: 1px solid #ccc;
+    padding: 5px 1%;
+}
+
+.footer-conteudo .who {
+    display: inline-block;
+    float: left;
+    width: 70%;
+    text-align: left;
+    font-size: 75%;
+}
+
+.footer-conteudo .who span {
+    padding-left: 2%;
+}
+
+.footer-conteudo .who img {
+    width: 7%;
+    border-radius: 50px;
+}
+
+
+.footer-conteudo .icon-social {
+    display: inline;
+    float: right;
+    font-size: 110%;   
+}
+
+
+
+
+
+
+/* ------------------------------------------------------------------------*/
+/* CAUSAS RECENTES */ 
+/* ------------------------------------------------------------------------*/
+/*.causa-recente {
+    max-height: 500px;
+    overflow-y: auto;
+}*/
+
+.noticia-recente {
+    background-color: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 2px 2px #efefef;
+    border-radius: 15px;
+    margin: 5px 0;
+}
+
+.noticia-recente img {
+    width: 100%;
+    border-radius: 15px;
+    padding: 1% 1%;  
+}
+
+.noticia-recente h3 {
+    margin: 3px 0;
+    font-size: 75%;
+}
+
+.noticia-recente p {
+    font-size: 65%;
+}
+
+.footer-noticia-recente {
+    padding: 0 1.5%;
+    font-size: 55%;
+    padding-left: 4px;
+}
+
+.footer-noticia-recente span {
+    display: inline-block;
+    float: left;
+}
+
+.footer-noticia-recente icon-social {
+    text-align: right;
+    display: inline-block;
+    float: right;
+}
+
+
+/* ------------------------------------------------------------------------*/
+/* PERFIL USUARIO */ 
+/* ------------------------------------------------------------------------*/
+.perfil {
+    background-color: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 2px 2px #efefef;
+    border-radius: 15px;
+    margin: 5px 0;
+}
+
+.perfil .left {
+    display: inline-block;
+    float: left;
+    padding: 0 2%;
+}
+
+.perfil .right {
+    display: inline-block;
+    float: left;
+    padding: 0 2%;
+}
+
+.perfil .right li {
+    list-style: none;
+}
+
+.perfil h2 {
+    margin: 10px 0;
+}
+
+.perfil img {
+    height: 200px;
+    width: auto;
+}
+
+/* ------------------------------------------------------------------------*/
+/* GALERIA IMAGEN PERFIL */ 
+/* ------------------------------------------------------------------------*/
+.galeria-imagen {
+    margin: 15px 0;
+}
+
+.galery {
+    background-color: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 2px 2px #efefef;
+    border-radius: 15px;
+    margin: 5px 0;
+    padding: 2px 4px;
+    max-height: 390px;
+    overflow-y: auto;
+}
+
+.galery img {
+    height: 75px;
+    width: 75px;
+    margin: 2px 2px;
+}
+
+.galery a:hover,
+.galery a:active{
+    border: 0;
+}
+
+.sponsor-perfil {
+    margin-top: 15px;
+}
